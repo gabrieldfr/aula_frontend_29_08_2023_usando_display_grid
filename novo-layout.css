@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+
+    grid-template-areas:
+        "header header" /* os nome são iguais, porque eu quero pegar a linha inteira */
+        "meio  meio2" /* Aqui irão ter duas imagens */
+        "meiob meiob" /* Os nomes são iguais, porque eu quero pegar a linha inteira */
+        "footer footer" /* Os nomes são iguais, porque eu quero pegar a linha inteira */
+    ;
+}
+
+.img-1 {
+    grid-area: header;
+}
+
+.img-2 {
+    grid-area: meio;
+}
+
+.img-3 {
+    grid-area: footer;
+}
+
+/* .img-1 {
+    grid-column: 1/3;
+} */
+
